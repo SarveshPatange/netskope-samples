@@ -50,7 +50,7 @@ def getClient(tenant, token):
     total = 0
     para['limit'] = THRESHOLD
     skip = 0
-    with open(outfile, 'w')as ofile:
+    with open(outfile, 'wb')as ofile:
         writer = csv.writer(ofile, delimiter=",")
         writer.writerow(["Hostname", "Username", "OS", "OS Version",
                         "Classification Status", "Last Event", "Actor",
